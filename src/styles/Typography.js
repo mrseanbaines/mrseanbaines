@@ -9,6 +9,7 @@ export const H1 = styled.h1(props => {
     font-family: ${fonts.display};
     font-size: 3rem;
     font-weight: ${fontWeights.black};
+    line-height: calc(1em + 1rem);
   `;
 });
 
@@ -24,6 +25,7 @@ export const P = styled.p(props => {
     font-family: ${fonts.main};
     font-size: 1rem;
     font-weight: ${fontWeights.regular};
+    line-height: calc(1em + 0.5rem);
   `;
 });
 
@@ -39,6 +41,7 @@ export const H6 = styled.h6(props => {
     font-family: ${fonts.main};
     font-size: 1rem;
     font-weight: ${fontWeights.bold};
+    line-height: calc(1em + 0.5rem);
   `;
 });
 
