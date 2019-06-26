@@ -18,6 +18,7 @@ export default createGlobalStyle(props => {
       font-weight: ${fontWeights.regular};
       color: ${colors.greys.dark};
       background: ${colors.greys.extraLight};
+      letter-spacing: 1px;
     }
   `;
 });
