@@ -10,7 +10,7 @@ export default memo(() => (
       </H6>
 
       <Box p={['2rem', '2rem', '2rem', '4rem']}>
-        <Box width="100%" maxWidth="35vw">
+        <Box width="100%" maxWidth={['100%', '65vw', '100%', '35vw']}>
           <H1>Color keywords</H1>
           <H6 mt="1rem" color="greys.light">
             JavaScript | React | TypeScript | Styled Components
