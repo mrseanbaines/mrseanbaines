@@ -12,6 +12,8 @@ export const StyledMenuIcon = styled.button(props => {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
+    outline: none;
 
     @media (min-width: ${breakpoints[1]}) {
       display: none;
