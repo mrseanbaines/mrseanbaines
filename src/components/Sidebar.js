@@ -58,10 +58,10 @@ export default memo(() => (
         </Box>
         <Box mt="4rem">
           <H6>Contact</H6>
-          <P mt="1rem">
-            <SocialLinks>
-              {socialLinks.map(({ href, icon, title }) => (
-                <li>
+          <SocialLinks>
+            {socialLinks.map(({ href, icon, title }) => (
+              <li key={title}>
+                <P mt="1rem">
                   <a
                     title={title}
                     href={href}
@@ -70,10 +70,10 @@ export default memo(() => (
                   >
                     <i className={icon} />
                   </a>
-                </li>
-              ))}
-            </SocialLinks>
-          </P>
+                </P>
+              </li>
+            ))}
+          </SocialLinks>
         </Box>
       </Box>
     </Flex>

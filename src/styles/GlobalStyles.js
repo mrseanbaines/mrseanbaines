@@ -1,4 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components';
+import { fontSize } from 'styled-system';
 import reset from './reset';
 
 export default createGlobalStyle(props => {
@@ -9,7 +10,7 @@ export default createGlobalStyle(props => {
     ${reset};
 
     :root {
-      font-size: 100%;
+      ${fontSize};
     }
 
     html,

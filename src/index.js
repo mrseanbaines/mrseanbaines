@@ -8,7 +8,7 @@ import theme from './styles/theme';
 render(
   <ThemeProvider theme={theme}>
     <Fragment>
-      <GlobalStyles />
+      <GlobalStyles fontSize={['80%', '90%', '90%', '100%']} />
       <App />
     </Fragment>
   </ThemeProvider>,
