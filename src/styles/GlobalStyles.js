@@ -19,6 +19,11 @@ export default createGlobalStyle(props => {
       color: ${colors.greys.dark};
       background: ${colors.greys.extraLight};
       letter-spacing: 1px;
+
+      &,
+      #root {
+        height: 100%;
+      }
     }
   `;
 });

@@ -1,12 +1,17 @@
 import styled, { css } from 'styled-components';
-import { color, textAlign } from 'styled-system';
+import { color, textAlign, space } from 'styled-system';
+
+const sharedStyles = css`
+  ${color};
+  ${textAlign};
+  ${space};
+`;
 
 export const H1 = styled.h1(props => {
   const { fonts, fontWeights } = props.theme;
 
   return css`
-    ${color};
-    ${textAlign};
+    ${sharedStyles};
     font-family: ${fonts.display};
     font-size: 3rem;
     font-weight: ${fontWeights.black};
@@ -22,8 +27,7 @@ export const P = styled.p(props => {
   const { fonts, fontWeights } = props.theme;
 
   return css`
-    ${color};
-    ${textAlign};
+    ${sharedStyles};
     font-family: ${fonts.main};
     font-size: 1rem;
     font-weight: ${fontWeights.regular};
@@ -39,8 +43,7 @@ export const H6 = styled.h6(props => {
   const { fonts, fontWeights } = props.theme;
 
   return css`
-    ${color};
-    ${textAlign};
+    ${sharedStyles};
     font-family: ${fonts.main};
     font-size: 1rem;
     font-weight: ${fontWeights.bold};
