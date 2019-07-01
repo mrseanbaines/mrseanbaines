@@ -3,7 +3,12 @@ import { Flex, Box, P, H6, H1, PreviewImg } from '../styles';
 import projects from '../data/projects';
 
 export default memo(() => (
-  <Box pl={[0, 0, 0, '4rem']} overflow="hidden auto" height="100vh">
+  <Box
+    pl={[0, 0, 0, '4rem']}
+    overflow="hidden auto"
+    height="100vh"
+    style={{ scrollSnapType: 'y mandatory' }}
+  >
     {projects.map(project => (
       <Flex
         key={project.title}
@@ -11,6 +16,7 @@ export default memo(() => (
         px={['3rem', '4rem']}
         flexDirection="column"
         minHeight="100vh"
+        style={{ scrollSnapAlign: 'start' }}
       >
         <div>
           <H6
