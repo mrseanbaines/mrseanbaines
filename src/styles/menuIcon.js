@@ -8,7 +8,7 @@ export const StyledMenuIcon = styled.button(props => {
     border: none;
     cursor: pointer;
     padding: 0.5rem;
-    margin: 1.5rem;
+    margin: 2.5rem;
     position: fixed;
     top: 0;
     left: 0;
