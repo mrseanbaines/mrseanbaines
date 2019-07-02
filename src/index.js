@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
 import App from './components/App';
 import theme from './styles/theme';
+import './scrollSnap';
 
 render(
   <ThemeProvider theme={theme}>

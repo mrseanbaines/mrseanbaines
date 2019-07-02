@@ -8,9 +8,11 @@ export default memo(() => (
     overflow="hidden auto"
     height="100vh"
     style={{ scrollSnapType: 'y mandatory' }}
+    id="scroll-snap-container"
   >
     {projects.map(project => (
       <Flex
+        className="scroll-snap-element"
         key={project.title}
         id={project.title.toLowerCase().replace(' ', '-')}
         px={['3rem', '4rem']}
