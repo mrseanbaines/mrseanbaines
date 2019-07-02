@@ -19,11 +19,7 @@ export default memo(() => (
         style={{ scrollSnapAlign: 'start' }}
       >
         <div>
-          <H6
-            mt={['3rem', '3rem', '4rem']}
-            textAlign="right"
-            color="greys.light"
-          >
+          <H6 mt="3rem" textAlign="right" color="greys.light">
             Projects
           </H6>
 
