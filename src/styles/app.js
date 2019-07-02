@@ -1,5 +1,6 @@
+/* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
-import { Box } from './';
+import { Box } from './layout';
 
 export const SlidingBox = styled(Box)`
   &.slide-enter {

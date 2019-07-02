@@ -1,6 +1,8 @@
 import React, { memo } from 'react';
-import { Flex, Box, P, H6, H1, PreviewImg } from '../styles';
+import { Box } from '../styles';
 import projects from '../data/projects';
+import Section from './Section';
+import vsCodeSrc from '../images/vs-code.png';
 
 export default memo(() => (
   <Box
@@ -10,48 +12,24 @@ export default memo(() => (
     style={{ scrollSnapType: 'y mandatory' }}
     id="scroll-snap-container"
   >
+    <Section
+      category="Welcome"
+      title="Hello world!"
+      tech={['Sean Baines', 'Front end developer']}
+      description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit temporibus architecto consectetur, aperiam sapiente voluptate quo ipsa voluptatum quas corporis vero voluptates et excepturi veniam fuga id corrupti molestias"
+      imgSrc={vsCodeSrc}
+    />
+
     {projects.map(project => (
-      <Flex
-        className="scroll-snap-element"
+      <Section
         key={project.title}
-        id={project.title.toLowerCase().replace(' ', '-')}
-        px={['3rem', '4rem']}
-        flexDirection="column"
-        minHeight="100vh"
-        style={{ scrollSnapAlign: 'start' }}
-      >
-        <div>
-          <H6 mt="3rem" textAlign="right" color="greys.light">
-            Projects
-          </H6>
-
-          <Box
-            mt={['3rem', '3rem', '4rem']}
-            width="100%"
-            maxWidth={['100%', '65vw', '100%', '45vw', '35vw']}
-          >
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <H1>{project.title}</H1>
-            </a>
-            <H6 mt="1rem" color="greys.light">
-              {project.tech.map(
-                (item, i, arr) => item + (i !== arr.length - 1 ? ' | ' : '')
-              )}
-            </H6>
-            <P mt="1rem">{project.description}</P>
-          </Box>
-        </div>
-
-        <Box mt={['3rem', '4rem']}>
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
-            <PreviewImg
-              width={['130vw', '100vw', '50vw', '70vw']}
-              src={project.imgSrc}
-              alt={project.title}
-            />
-          </a>
-        </Box>
-      </Flex>
+        category="Projects"
+        title={project.title}
+        link={project.link}
+        tech={project.tech}
+        description={project.description}
+        imgSrc={project.imgSrc}
+      />
     ))}
   </Box>
 ));
