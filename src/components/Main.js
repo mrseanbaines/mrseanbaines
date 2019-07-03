@@ -1,15 +1,13 @@
 import React, { memo } from 'react';
-import { Box } from '../styles';
+import { ScrollableContainer } from '../styles';
 import projects from '../data/projects';
 import Section from './Section';
 import vsCodeSrc from '../images/vs-code.png';
 
 export default memo(() => (
-  <Box
+  <ScrollableContainer
     pl={[0, 0, 0, '4rem']}
-    overflow="hidden auto"
     height="100vh"
-    style={{ scrollSnapType: 'y mandatory' }}
     id="scroll-snap-container"
   >
     <Section
@@ -31,5 +29,5 @@ export default memo(() => (
         imgSrc={project.imgSrc}
       />
     ))}
-  </Box>
+  </ScrollableContainer>
 ));
