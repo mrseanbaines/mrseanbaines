@@ -9,7 +9,8 @@ export default [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vitae perferendis obcaecati reiciendis id eligendi nesciunt modi cupiditate, mollitia, laborum eius minima aliquid veritatis magni iste atque suscipit commodi necessitatibus!',
     imgSrc: colorKeywordsSrc,
-    link: 'https://www.colorkeywords.com',
+    projectLink: 'https://www.colorkeywords.com',
+    codeLink: 'https://github.com/mrseanbaines/color-keywords',
   },
   {
     title: 'Expenses app',
@@ -17,7 +18,8 @@ export default [
     description:
       'Quasi perspiciatis dolorem doloribus odit error esse. Nemo et quaerat explicabo eum, placeat similique minima rem voluptatibus sunt. Esse neque ipsam accusantium modi enim vitae libero officia quod quae dolore fuga pariatur adipisci.',
     imgSrc: expensesAppSrc,
-    link: 'https://mrseanbaines-expenses-app.netlify.com/#/',
+    projectLink: 'https://mrseanbaines-expenses-app.netlify.com/#/',
+    codeLink: 'https://github.com/mrseanbaines/expenses-app-frontend',
   },
   {
     title: 'Pomo',
@@ -25,6 +27,7 @@ export default [
     description:
       'Animi culpa labore ducimus tempore in neque sit sed eius eaque odio, Perspiciatis saepe delectus corporis doloribus ratione eum quis sapiente pariatur fugiat error, nulla quo distinctio veniam, unde earum sed tenetur.',
     imgSrc: pomoSrc,
-    link: 'https://seanbaines.com/pomo-web',
+    projectLink: 'https://seanbaines.com/pomo-web',
+    codeLink: 'https://github.com/mrseanbaines/pomo-web',
   },
 ];

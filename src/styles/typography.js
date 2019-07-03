@@ -54,3 +54,32 @@ export const H6 = styled.h6(props => {
 H6.defaultProps = {
   color: 'greys.dark',
 };
+
+export const TextLink = styled.a(props => {
+  const { fonts, fontWeights } = props.theme;
+
+  return css`
+    ${sharedStyles};
+    font-family: ${fonts.main};
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.8em;
+
+    ::after {
+      content: '\f061';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: ${fontWeights.bold};
+      margin-left: 0.5rem;
+      transition: all 100ms;
+    }
+
+    :hover::after {
+      margin-left: 1rem;
+    }
+  `;
+});
+
+TextLink.defaultProps = {
+  color: 'lightcoral',
+};

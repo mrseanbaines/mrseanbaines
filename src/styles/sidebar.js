@@ -27,7 +27,7 @@ export const SocialLinks = styled.ul(props => {
         font-size: 1.2rem;
 
         :hover {
-          color: ${colors.greys.dark};
+          color: lightcoral;
         }
       }
     }
