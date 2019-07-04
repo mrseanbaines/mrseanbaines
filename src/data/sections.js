@@ -33,7 +33,7 @@ export default [
     tech: ['JavaScript', 'React', 'Redux', 'Node/Express', 'Styled Components'],
     description: [
       `A mock app that lists a company's expenses in multiple currencies and allows the user to upload receipts, add comments, set categories and more.`,
-      `I built a Node/Express API which the front end communicates with to interact with the data.`,
+      `This has a Node/Express API which the front end communicates with to interact with the data.`,
     ],
     imgSrc: expensesAppSrc,
     projectLink: 'https://mrseanbaines-expenses-app.netlify.com/#/',
