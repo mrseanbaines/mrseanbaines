@@ -47,7 +47,7 @@ export default [
       `A basic pomodoro timer which toggles between session and break times and allows you to change the length of each.`,
     ],
     imgSrc: pomoSrc,
-    projectLink: 'https://seanbaines.com/pomo-web',
+    projectLink: 'https://mrseanbaines-pomo.netlify.com',
     codeLink: 'https://github.com/mrseanbaines/pomo-web',
   },
 ];
