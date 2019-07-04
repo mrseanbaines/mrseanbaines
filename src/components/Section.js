@@ -31,7 +31,9 @@ const Section = memo(
             )}
           </H6>
 
-          <P mt="1rem">{description}</P>
+          {description.map(paragraph => (
+            <P mt="1rem" dangerouslySetInnerHTML={{ __html: paragraph }} />
+          ))}
 
           {projectLink && (
             <TextLink
@@ -75,6 +77,7 @@ Section.defaultProps = {
   projectLink: undefined,
   codeLink: undefined,
   tech: [],
+  description: [],
 };
 
 Section.propTypes = {
@@ -83,7 +86,7 @@ Section.propTypes = {
   projectLink: PropTypes.string,
   codeLink: PropTypes.string,
   tech: PropTypes.arrayOf(PropTypes.string),
-  description: PropTypes.string.isRequired,
+  description: PropTypes.arrayOf(PropTypes.string),
   imgSrc: PropTypes.string.isRequired,
 };
 

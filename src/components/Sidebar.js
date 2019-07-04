@@ -20,8 +20,8 @@ export default memo(() => (
         <Box mt={['3rem', '4rem']}>
           <H6>About</H6>
           <P mt="1rem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            vitae perferendis obcaecati reiciendis.
+            Front end developer with design tendencies and a passion for writing
+            clean, modular and maintainable code.
           </P>
         </Box>
         <Box mt={['3rem', '4rem']}>
