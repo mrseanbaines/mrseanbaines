@@ -11,7 +11,6 @@ export default [
     description: [
       `I began my journey as a web developer by teaching myself to code through free online resources. Since then, I have become highly skilled in front end development through a desire to constantly improve and add to my skills.`,
       `I build websites and applications using a modern tech stack, specialising in React.js development.`,
-      `I'm available for remote work so please <a style="color: lightcoral" href="mailto:mrseanbaines@gmail.com">get in touch</a>.`,
     ],
     imgSrc: vsCodeSrc,
   },
